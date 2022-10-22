@@ -1,0 +1,19 @@
+nick = {
+    'M': ['*   *', '** **', '* * *', '*   *', '*   *'],
+    'O': [' *** ', '*   *', '*   *', '*   *', ' *** '],
+    'N': ['*   *', '**  *', '* * *', '*  **', '*   *'],
+    'S': [' ****', '*    ', '**** ', '    *', '**** '],
+    'I': ['*****', '  *  ', '  *  ', '  *  ', '*****'],
+}
+
+string = "MONSI"
+
+for i in range(5):
+
+    for Stars in range(len(string)):
+        word = string[Stars]
+
+        if Stars == len(string) - 1:
+            print(nick[word][i])
+        else:
+            print(nick[word][i], end='    ')
